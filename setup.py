@@ -10,7 +10,7 @@ exec (compile(open(version_file).read(), version_file, 'exec'))
 
 setup(name='robotframework-appiumlibrary',
       version=VERSION,
-      description='Robot Framework Mobile app testing library for Appium Client Android & iOS & Web',
+      description='Custom Robot Framework Mobile app testing library for Appium Client Android & iOS & Web',
       long_description=open(join(ROOT, 'README.rst')).read(),
       author='Serhat Bolsu, William Zhang, Xie Lieping, Jari Nurminen',
       author_email='serhatbolsu@gmail.com,jollychang@gmail.com,frankbp@gmail.com',

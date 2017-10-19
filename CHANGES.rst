@@ -1,5 +1,12 @@
 History
 =======
+2.0.0
+----------------
+- Switch Window - new keyword  added for switching to different UWP app's windows
+- Close All Open Window - new keyword added for closing all current open windows of an UWP app
+- Switch Window After Closing A Child Window - new keyword added - in case there are two open windows, close 2nd window and switch back to 1st window
+
+
 1.4.5
 ----------------
 - Swipe By Percent - new keyword added
