@@ -68,7 +68,7 @@ class _ApplicationManagementKeywords(KeywordGroup):
 
     def switch_window(self):
         """In case application opens a new window, use this to switch to that one.
-        Please use only when your applicaiton has just two windows
+        Please use only when your application has just two windows
         """
         current = self._driver.current_window_handle
         self._available_windows = self._driver.window_handles
@@ -76,6 +76,16 @@ class _ApplicationManagementKeywords(KeywordGroup):
             if window != current:
                 self._driver.switch_to.window(window)
                 self._current_window = window
+
+    def switch_to_newest_open_window(self):
+        """In case application opens a new window, use this to switch to the newest window.
+        Please use only when your application has more than two windows
+        """
+        current = self._driver.current_window_handle
+        self._available_windows = self._driver.window_handles
+
+        self._driver.switch_to.window(self._available_windows[-1])
+
 
     def switch_window_after_closing_a_child_window(self):
         """After closing a child window,
